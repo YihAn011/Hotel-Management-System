@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check Available Rooms</title>
+   
+    <link rel="stylesheet" href="showAvailableRooms.css">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+   
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+</head>
+<body>
+    <header>     
+        <nav>
+            <div class="header-container">
+                <div class="menu">Menu
+                    <div class="slide-out-menu">
+                        <ul>
+                            <li><a href="Hotel-web.html">Homepage</a></li>
+                            <li><a href="rooms.html">Rooms</a></li>
+                            <li><a href="#services">Services</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                            <li><a href="#" id="menuLoginButton">Log In</a></li>
+                        
+                        </ul>
+                    </div>
+                </div>
+                <h1 class="hotel-name">Ocean Shore Hotel</h1>
+                
+               
+                <div class="book-now">
+                   
+                    <span class="phone-number">Phone: +1 (000) 000-0000</span>
+                    <button id="topRightLoginButton" class="book-now-button">Log In</button>
+                    <button id="myOrdersButton" class="book-now-button" style="display: none;">MY ORDERS</button>
+                    <button onclick="showBookingForm()" class="book-now-button">BOOK NOW</button>
+                    
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        
+        <div id="roomsList"></div>
+
+        <script src="showAvailableRooms.js"></script>
+
+       
+        <div id="paymentModal" style="display: none; position: fixed; z-index: 1000; left: 0; top: 0; width: 100%; height: 100%; overflow: auto; background-color: rgba(0,0,0,0.4);">
+            <div style="background-color: #fefefe; margin: 5% auto; padding: 20px; border: 1px solid #888; width: 80%; max-width: 500px;">
+                <span id="closeModal" style="color: #aaa; float: right; font-size: 28px; font-weight: bold;">&times;</span>
+                <h2>Make a Payment</h2>
+                
+                <p>Supports Master and Visa.</p>
+                <div>
+                    <label for="paymentType">Payment Type</label>
+                    <div id="paymentAmount">Amount: $<span id="priceAmount">100</span></div>
+                    <input type="hidden" id="statementID" value="1472896712">
+                </div>
+               
+                <div>
+                    <label for="nameOnCard">Name on Card *</label>
+                    <input type="text" id="nameOnCard" required>
+                    
+                    <label for="cardNumber">Card Number *</label>
+                    <input type="text" id="cardNumber" required>
+                    
+                    <label for="expirationDate">Expiration Date *</label>
+                    <input type="text" id="expirationDate" placeholder="MM/YYYY" required>
+                    
+                    <label for="securityCode">Security Code *</label>
+                    <input type="text" id="securityCode" required>
+                    
+                    <label for="zipCode">Zip Code *</label>
+                    <input type="text" id="zipCode" required>
+                </div>
+              
+                <div>
+                    <label for="emailAddress">Enter an Email Address</label>
+                    <input type="email" id="emailAddress">
+                </div>
+                
+                <button id="placeOrderButton">Place Order</button>
+            </div>
+        </div>
+        
+    </main>
+
+   
+    <footer>
+        <div class="footer-container">
+            <div class="footer-left">
+                <h2>Pacific Rooftop</h2>
+                <p>SBUIUI@BIUB@IUB</p>
+                <p>address1111</p>
+                <p>address2222</p>
+                <p>email address:***********</p>
+                <p>+1 (425)559-0355</p>
+                <div class="footer-links">
+                    <a href="#">Contact Us</a> |
+                    <a href="#">Press</a> |
+                    <a href="#">Cleanliness Policy</a> |
+                    <a href="#">Careers</a>
+                </div>
+            </div>
+            <div class="footer-right">
+                <h3>Sign Up to be A Member!</h3>
+                <form class="newsletter-form" id="signupForm">
+                    <input type="text" name="firstName" placeholder="First Name" required>
+                    <input type="text" name="lastName" placeholder="Last Name" required>
+                    <input type="email" name="email" placeholder="Email Address" required>
+                    <input type="password" name="password" placeholder="Password" required>
+                    <div class="checkbox-container">
+                        <input type="checkbox" id="privacy" name="privacy" required>
+                        <label for="privacy">I have read and agree to the Privacy Policy.</label>
+                    </div>
+                    <div class="checkbox-container">
+                        <input type="checkbox" id="offers" name="offers">
+                        <label for="offers">Yes, I would like to receive emails with exclusive specials and offers.</label>
+                    </div>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+       
+      
+
+    </footer>
+
+    
+    
+</body>
+</html>

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang=en> 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel reservation</title>
+   
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+   
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    
+</head>
+<body>
+  
+    <header>     
+        <nav>
+            <div class="header-container">
+                <div class="menu">Menu
+                    <div class="slide-out-menu">
+                        <ul>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="rooms.html">Rooms</a></li>
+                            <li><a href="#services">Services</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                            <li><a href="#" id="menuLoginButton">Log In</a></li>
+                            
+                        </ul>
+                    </div>
+                </div>
+                <h1 class="hotel-name">Ocean Shore Hotel</h1>
+                
+               
+                <div class="book-now">
+                   
+                    <span class="phone-number">Phone: +1 (000) 000-0000</span>
+                    <button id="topRightLoginButton" class="book-now-button">Log In</button>
+                    <button onclick="showBookingForm()" class="book-now-button">MY RESERVATIONS</button>
+                    
+                </div>
+                
+                
+
+
+            </div>
+        </nav>
+    </header>
+
+    
+    <main>
+        
+
+        <section id="home">
+           
+            
+        </section>
+
+        
+        <section id="rooms">
+  
+    
+
+   
+
+    <div class="carousel-container">
+        <div id="carousel" class="carousel">
+            <img src="https://media.istockphoto.com/id/104731717/photo/luxury-resort.jpg?s=612x612&w=0&k=20&c=cODMSPbYyrn1FHake1xYz9M8r15iOfGz9Aosy9Db7mI=" alt="Single Room" class="carousel-image">
+            <img src="https://cdn.traveltripper.io/site-assets/512_855_12327/media/2018-02-27-075802/large_superior-double.jpg" alt="Double Room" class="carousel-image" style="display: none;">
+            <img src="https://i1.wp.com/www.differencebetween.com/wp-content/uploads/2016/01/Difference_Between_Suite_Room_Image1.jpg" alt="Suite Room" class="carousel-image" style="display: none;">
+        </div>
+        <div class="carousel-controls">
+            <button id="prev">＜</button>
+            <button id="next">＞</button>
+        </div>
+    </div>
+    <div class="room-info">
+        <div id="single-info" class="info"></div>
+        <div id="double-info" class="info" style="display: none;"></div>
+        <div id="suite-info" class="info" style="display: none;"></div>
+    </div>
+    
+    <!-- 更多房型和图片 -->
+
+
+
+
+    <div class="booking-bar">
+        <form id="booking-form">
+            <div class="booking-field">
+                <label for="check-in">CHECK IN</label>
+                <input type="text" id="check-in" name="check-in" class="date-picker" readonly>
+            </div>
+            <div class="booking-field">
+                <label for="check-out">CHECK OUT</label>
+                <input type="text" id="check-out" name="check-out" class="date-picker" readonly>
+            </div>
+            <div class="booking-field">
+                <label for="occupancy">OCCUPANCY</label>
+                <select id="occupancy" name="occupancy">
+                    <option value="1">1 Room, 1 Adult</option>
+                    <option value="2" selected>1 Room, 2 Adults</option>
+                    <option value="3">1 Room, 3 Adults</option>
+                    
+                </select>
+            </div>
+            <div class="booking-field">
+                <button type="submit" id="update-button">UPDATE</button>
+            </div>
+        </form>
+    </div>
+
+
+
+
+
+    </main>
+
+   
+    <footer>
+        <footer>
+            <div class="footer-container">
+                <div class="footer-left">
+                    <h2>Pacific Rooftop</h2>
+                    <p>SBUIUI@BIUB@IUB</p>
+                    <p>address1111</p>
+                    <p>address2222</p>
+                    <p>email address:***********</p>
+                    <p>+1 (425)559-0355</p>
+                   
+                    <div class="footer-links">
+                        <a href="#">Contact Us</a> |
+                        <a href="#">Press</a> |
+                        <a href="#">Cleanliness Policy</a> |
+                        <a href="#">Careers</a>
+                    </div>
+                </div>
+                <div class="footer-right">
+                    <h3>Sign Up to be A Member!</h3>
+                    <form class="newsletter-form">
+                        <input type="text" placeholder="First Name">
+                        <input type="text" placeholder="Last Name">
+                        <input type="email" placeholder="Email Address">
+                        <div class="checkbox-container">
+                            <input type="checkbox" id="privacy">
+                            <label for="privacy">I have read and agree to the Privacy Policy.</label>
+                        </div>
+                        <div class="checkbox-container">
+                            <input type="checkbox" id="offers">
+                            <label for="offers">Yes, I would like to receive emails with exclusive specials and offers.</label>
+                        </div>
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </footer>
+    </footer>
+
+
+   
+    
+    <script src="javascript.js"></script>
+</body>
+</html>

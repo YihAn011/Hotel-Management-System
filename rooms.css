@@ -1,0 +1,515 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+.background img{
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    text-align: left;
+    font-family: "Montserrat",sans-serif;
+    font-size: 16px;
+    color: #202020;
+    -webkit-font-smoothing: antialiased;
+    box-sizing: border-box;
+    display: block;
+    opacity: 1;
+    clip-path: inset(0 0 0 0);
+    transition: all .7s ease-in-out;
+    position: relative;
+    width: 100vw; 
+    height: auto;
+
+   
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background-color: rgba(248, 248, 248, 0.5); 
+    padding: 10px 0;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(19, 18, 18, 0.1); 
+}
+
+main {
+    position: relative;
+    background: #fff; 
+    z-index: 10;
+    
+    padding-top: 100vh;
+}
+
+#home h1 {
+    font-size: 3em; 
+    margin-top: 0;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.menu {
+    font-size: 1.2em; 
+    color: #010101; 
+    cursor: pointer; 
+    position: relative; 
+    
+}
+body {
+    overflow-x: hidden;
+}
+
+.slide-out-menu {
+    position: fixed; 
+    top: 0;
+    left: -50vw; 
+    width: 25vw;
+    height: 100vh; 
+    background-color: rgba(25, 160, 167, 0.9); 
+    transition: left 0.5s ease; 
+    z-index: 100; 
+}
+
+
+.slide-out-menu ul {
+    list-style-type: none;
+    padding: 20px; 
+    margin: 0;
+    margin-top:100px ;
+}
+
+.slide-out-menu ul li a {
+    display: block;
+    padding: 10px 20px;
+    color: #f6f4f4;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+
+.menu:hover .slide-out-menu {
+    left: 0; 
+}
+
+.hotel-name {
+    font-size: 2em; 
+    color: #020202;
+    text-align: center;
+}
+
+.book-now {
+    text-align: right;
+}
+
+.phone-number {
+    display: block; 
+    color: #070707;
+    margin-bottom: 5px; 
+}
+
+.book-now-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #000; 
+    color: #fff; 
+    text-decoration: none;
+    border-radius: 5px; 
+    font-weight: bold;
+    margin-right: 5px;
+
+}
+
+
+
+
+
+
+
+
+.room-type-1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    max-width: 1000px; 
+    margin-left: 10px;
+    margin-top: -600px; 
+}
+
+.image-container {
+    flex: 3; 
+    padding-right: 20px;
+    margin-left: px;
+}
+
+.image-container img {
+    width: 100%; 
+    height: auto; 
+    display: block; 
+}
+
+.text-container {
+    flex: 10; 
+    padding-left: 20px; 
+}
+
+.text-container h2 {
+    font-size: 2em; 
+    color: #333; 
+    margin-bottom: 0.5em;
+}
+
+.text-container p {
+    font-size: 1em; 
+    color: #666; 
+    line-height: 1.6; 
+}
+
+.book-now-button {
+    font-size: 1em; 
+    padding: 15px 30px;
+    background-color: transparent; 
+    color: #000; 
+    border: 2px solid #000; 
+    cursor: pointer; 
+    border-radius: 0; 
+    margin-top: 20px; 
+    transition: all 0.3s ease; 
+    font-weight: bold; 
+    text-transform: uppercase; 
+}
+
+.book-now-button:hover {
+    background-color: #000; 
+    color: #fff; 
+}
+
+
+.text-container {
+    
+    padding-bottom: 40px;
+}
+
+
+.image-container {
+    
+    padding-right: 0; 
+}
+
+
+
+
+
+
+.room-type-2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    max-width: 1000px; 
+    margin-left: 150px;
+    margin-top: 10px; 
+}
+
+.image-container {
+    flex: 3; 
+    padding-right: 20px; 
+}
+
+.image-container img {
+    width: 100%; 
+    height: auto;
+    display: block;
+}
+
+.text-container {
+    flex: 2; 
+    padding-left: 0px; 
+    margin-right: 10px;
+}
+
+.text-container h2 {
+    font-size: 2em; 
+    color: #333;
+    margin-bottom: 0.5em;
+}
+
+.text-container p {
+    font-size: 1em; 
+    color: #666;
+    line-height: 1.6; 
+}
+
+.room-type-3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    max-width: 1000px; 
+    margin-left: 10px;
+    margin-top: 450x; 
+}
+
+.image-container {
+    flex: 3; 
+    padding-right: 20px; 
+    margin-left: px;
+}
+
+.image-container img {
+    width: 100%; 
+    height: auto;
+    display: block; 
+}
+
+.text-container {
+    flex: 10; 
+    padding-left: 20px; 
+}
+
+.text-container h2 {
+    font-size: 2em;
+    color: #333; 
+    margin-bottom: 0.5em;
+}
+
+.text-container p {
+    font-size: 1em; 
+    color: #666; 
+    line-height: 1.6; 
+}
+
+.room-type-4 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    max-width: 1000px; 
+    margin-left: 150px;
+    margin-top: 30px;
+}
+
+.image-container {
+    flex: 3; 
+    padding-right: 20px; 
+}
+
+.image-container img {
+    width: 100%; 
+    height: auto; 
+    display: block; 
+}
+
+.text-container {
+    flex: 2; 
+    padding-left: 0px; 
+    margin-right: 10px;
+}
+
+.text-container h2 {
+    font-size: 2em; 
+    color: #333; 
+    margin-bottom: 0.5em;
+}
+
+.text-container p {
+    font-size: 1em; 
+    color: #666;
+    line-height: 1.6; 
+}
+
+.room-type-5 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    max-width: 1000px; 
+    margin-left: 10px;
+    margin-top: 30px; 
+}
+
+.image-container {
+    flex: 3; 
+    padding-right: 20px; 
+    margin-left: px;
+}
+
+.image-container img {
+    width: 100%; 
+    height: auto;
+    display: block; 
+}
+
+.text-container {
+    flex: 10; 
+    padding-left: 20px; 
+}
+
+.text-container h2 {
+    font-size: 2em; 
+    color: #333; 
+    margin-bottom: 0.5em;
+}
+
+.text-container p {
+    font-size: 1em; 
+    color: #666; 
+    line-height: 1.6; 
+}
+
+.room-type-6 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    max-width: 1000px;
+    margin-left: 150px;
+    margin-top: 30px; 
+}
+
+.image-container {
+    flex: 3; 
+    padding-right: 20px; 
+}
+
+.image-container img {
+    width: 100%; 
+    height: auto;
+    display: block; 
+}
+
+.text-container {
+    flex: 2; 
+    padding-left: 0px; 
+    margin-right: 10px;
+}
+
+.text-container h2 {
+    font-size: 2em; 
+    color: #333; 
+    margin-bottom: 0.5em;
+}
+
+.text-container p {
+    font-size: 1em; 
+    color: #666; 
+    line-height: 1.6;
+}
+
+
+
+
+
+
+
+
+
+footer {
+    background-color: #353535; 
+    color: #fff; 
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between; 
+    align-items: flex-start;
+    padding: 50px;
+    
+    width: 100%;
+}
+
+.footer-right {
+   
+    flex-basis: 50%;
+}
+
+.footer-left h2 {
+    margin: 0;
+    padding-bottom: 10px;
+}
+
+.footer-left p,
+.footer-links a,
+.social-icons a {
+    color: #ccc; 
+    text-decoration: none;
+    padding: 5px 0; 
+}
+
+.social-icons {
+    font-size: 24px; 
+    padding-top: 10px;
+}
+
+.social-icon {
+    padding-right: 10px;
+}
+
+.footer-right h3 {
+    margin-top: 0;
+}
+
+.newsletter-form input[type="text"],
+.newsletter-form input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-bottom: 1px solid #ccc; 
+    background-color: transparent;
+    color: #fff;
+}
+
+.newsletter-form .checkbox-container {
+    margin: 20px 0;
+}
+
+.newsletter-form input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.newsletter-form button {
+    background-color: transparent;
+    border: 1px solid #ccc;
+    padding: 10px 20px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.newsletter-form button:hover {
+    background-color: #ccc;
+    color: #1a1a1a;
+}
+
+
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+    }
+    .footer-left,
+    .footer-right {
+        width: 100%;
+        
+    }
+}
+.amenities-section {
+    background-image: url('https://image.freepik.com/free-photo/dark-green-texture_1205-318.jpg'); 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    background-position: center center;
+    text-align: center; 
+    padding: 50px 0; 
+    margin-top: 50px;
+}

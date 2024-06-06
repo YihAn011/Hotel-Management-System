@@ -1,0 +1,471 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background-color: rgba(248, 248, 248, 0.5); 
+    padding: 10px 0;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(19, 18, 18, 0.1); 
+    
+}
+
+main {
+    position: relative;
+    background: #fff; 
+    z-index: 10;
+    
+    padding-top: 100vh;
+}
+
+#home h1 {
+    font-size: 3em; 
+    margin-top: 0;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px; 
+    margin: auto;
+}
+
+.menu {
+    font-size: 1.2em; 
+    color: #010101; 
+    cursor: pointer; 
+    position: relative; 
+    
+}
+body {
+    overflow-x: hidden;
+}
+
+
+.slide-out-menu {
+    position: fixed; 
+    top: 0;
+    left: -50vw;
+    width: 25vw; 
+    height: 100vh;
+    background-color: rgba(25, 160, 167, 0.9); 
+    transition: left 0.5s ease; 
+    z-index: 100;
+}
+
+
+.slide-out-menu ul {
+    list-style-type: none;
+    padding: 20px; 
+    margin: 0;
+    margin-top:100px ;
+}
+
+.slide-out-menu ul li a {
+    display: block;
+    padding: 10px 20px;
+    color: #f6f4f4;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+
+.menu:hover .slide-out-menu {
+    left: 0; 
+}
+
+.hotel-name {
+    font-size: 2em; 
+    color: #020202; 
+    text-align: center;
+    
+}
+
+.book-now {
+    text-align: right;
+}
+
+.phone-number {
+    display: block; 
+    color: #070707; 
+    margin-bottom: 5px; 
+}
+
+.book-now-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color:transparent; 
+    color: #0c0c0c; 
+    text-decoration: none;
+    border-radius: 5px; 
+    font-weight: bold;
+    margin-right: 5px;
+
+}
+.book-now-button:hover {
+    background-color: #000;
+    color: #fff;
+
+}
+
+.booking-form-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1001; 
+    display: none;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    cursor: pointer;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.booking-form h2 {
+    text-align: center;
+}
+
+.booking-form form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.booking-form form label {
+    display: block;
+}
+
+.booking-form form input,
+.booking-form form select {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.booking-form form button {
+    grid-column: 1 / -1;
+    padding: 10px;
+    background-color: #000;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.modal {
+    display: none; 
+    position: fixed; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    width: 30%; 
+    height: auto; 
+    background-color: #2c3e50;
+    z-index: 1000; 
+    border-radius: 5px; 
+    padding: 20px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+.modal-content {
+   
+    color: white; 
+    border-radius: 10px; 
+}
+
+.input-container {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.input-container .icon {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    color: #fff;
+}
+
+.input-container input {
+    width: 100%; 
+    padding: 10px 10px 10px 40px; 
+    border: none;
+    border-radius: 20px; 
+    outline: none;
+    background: #34495e; 
+    color: white; 
+    box-sizing: border-box; 
+}
+
+.login-button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 20px; 
+    background: #1abc9c; 
+    color: white; 
+    cursor: pointer;
+}
+
+.login-button:hover {
+    background: #16a085; 
+}
+
+.close-button2 {
+    position: absolute; 
+    top: 8px; 
+    right: 11px; 
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* 顶部右侧按钮样式，假设与“Book Now”按钮相同 */
+.top-right-buttons .book-now-button {
+    /* 你的样式 */
+    
+}
+
+/* 菜单中的登录链接样式 */
+nav #menuLoginButton {
+    /* 你的样式 */
+}
+
+.header-buttons > button:last-child {
+    margin-right: 0;
+}
+.header-buttons {
+    display: flex;
+    align-items: center; /* 如需要，对齐项目 */
+    /* 其他样式，比如定位或边距 */
+}
+
+
+
+
+
+
+
+
+.booking-bar {
+    background-color: #ffffff; /* Or any other color you prefer */
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.1); /* For shadow effect */
+    z-index: 5; /* To ensure it stays on top */
+}
+
+.booking-field {
+    margin: 0 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.booking-field label {
+    font-size: 0.75em;
+    color: #333333;
+    margin-bottom: 5px;
+}
+
+.booking-field input,
+.booking-field select {
+    border: 1px solid #CCCCCC;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1em;
+}
+
+#update-button {
+    background-color: #4CAF50; /* Green background */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    text-transform: uppercase; /* Optional: to follow the design */
+}
+
+#update-button:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+.date-picker {
+    cursor: pointer;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .booking-bar {
+        flex-direction: column;
+    }
+    .booking-field {
+        width: 100%;
+        margin: 5px 0;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer {
+    background-color: #353535; /* Dark background color */
+    color: #fff; /* White text color */
+    padding: 50px; /* Footer padding */
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between; /* This will space out the .footer-left and .footer-right */
+    align-items: flex-start;
+    padding: 50px;
+    /* Ensure the footer takes up the full width of its container */
+    width: 100%;
+}
+
+.footer-right {
+    /* Assuming both .footer-left and .footer-right take up 50% of the footer */
+    flex-basis: 50%;
+}
+
+.footer-left h2 {
+    margin: 0;
+    padding-bottom: 10px;
+}
+
+.footer-left p,
+.footer-links a,
+.social-icons a {
+    color: #ccc; /* Lighter text color for contrast */
+    text-decoration: none;
+    padding: 5px 0; /* Space between text items */
+}
+
+.social-icons {
+    font-size: 24px; /* Larger icons */
+    padding-top: 10px;
+}
+
+.social-icon {
+    padding-right: 10px;
+}
+
+.footer-right h3 {
+    margin-top: 0;
+}
+
+.newsletter-form input[type="text"],
+.newsletter-form input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-bottom: 1px solid #ccc; /* Underline style */
+    background-color: transparent;
+    color: #fff;
+}
+
+.newsletter-form .checkbox-container {
+    margin: 20px 0;
+}
+
+.newsletter-form input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.newsletter-form button {
+    background-color: transparent;
+    border: 1px solid #ccc;
+    padding: 10px 20px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.newsletter-form button:hover {
+    background-color: #ccc;
+    color: #1a1a1a;
+}
+
+/* Responsive adjustments might be necessary depending on your existing styles */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+    }
+    .footer-left,
+    .footer-right {
+        width: 100%;
+        
+    }
+}
+
+.carousel-container {
+    width: 100vw;  /* 视口宽度 */
+    height: 100vh; /* 视口高度 */
+    overflow: hidden; /* 隐藏超出部分 */
+    position: relative; /* 用于定位控件和信息 */
+}
+
+.carousel {
+    width: 100%;
+    height: 100%;
+}
+
+.carousel-image {
+    width: 100%;  /* 使图片宽度占满容器 */
+    height: 100%; /* 使图片高度占满容器 */
+    object-fit: cover; /* 覆盖整个元素盒子，可能会裁切图片 */
+    display: block; /* 删除图片下方的空白间隙 */
+}
+
+.carousel-controls {
+    position: absolute; /* 控制元素绝对定位 */
+    bottom: 10px; /* 从底部10px的位置 */
+    left: 50%; /* 水平居中 */
+    transform: translateX(-50%); /* 位移调整确保居中 */
+    z-index: 10; /* 确保控制元素在图片之上 */
+}
+
+.info {
+    position: absolute; /* 信息绝对定位 */
+    bottom: 10px; /* 从底部10px的位置 */
+    width: 100%; /* 宽度占满 */
+    text-align: center; /* 文本居中 */
+    color: #fff; /* 字体颜色 */
+    z-index: 10; /* 确保信息在图片之上 */
+}

@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang=en> 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel reservation</title>
+    
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    
+</head>
+<body>
+    <div class="background">
+        <img src="https://64.media.tumblr.com/330a8499747ca77b7999bbbd29d06d58/tumblr_pw91g29puz1uvsi7jo1_1280.gif" alt="Background Image"/>
+    </div>
+    
+    <header>     
+        <nav>
+            <div class="header-container">
+                <div class="menu">Menu
+                    <div class="slide-out-menu">
+                        <ul>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="rooms.html">Rooms</a></li>
+                            <li><a href="#services">Services</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                            <li><a href="#" id="menuLoginButton">Log In</a></li>
+                           
+                        </ul>
+                    </div>
+                </div>
+                <h1 class="hotel-name">Ocean Shore Hotel</h1>
+                
+               
+                <div class="book-now">
+                   
+                    <span class="phone-number">Phone: +1 (000) 000-0000</span>
+                    <button id="topRightLoginButton" class="book-now-button">Log In</button>
+                    <button id="myOrdersButton" class="book-now-button" style="display: none;">MY ORDERS</button>
+                    <button onclick="showBookingForm()" class="book-now-button">BOOK NOW</button>
+                    
+                </div>
+                
+                
+
+
+            </div>
+        </nav>
+    </header>
+
+   
+    <main>
+        <div id="loginModal" class="modal">
+            <div class="modal-content">
+                <h2>User Login</h2>
+                <span class="close-button2">&times;</span>
+                <form id="loginForm">
+                    <div class="input-container">
+                        <i class="fa fa-user icon"></i>
+                        <input type="text" id="username" name="username" placeholder="Username">
+                    </div>
+                    <div class="input-container">
+                        <i class="fa fa-lock icon"></i>
+                        <input type="password" id="password" name="password" placeholder="Password">
+                    </div>
+                    <button type="submit" class="login-button">Login</button>
+                    <button type="button" id="signupButton" class="signup-button">Sign Up</button>
+                </form>
+            </div>
+        </div>
+
+
+        
+        
+        <div class="booking-form-container">
+            <div class="booking-form">
+                <h2>Book Your Stay</h2>
+                <span class="close-btn" onclick="closeBookingForm()">&times;</span>
+                <form id="bookingForm">
+                    <label for="arrivalDate">Check In:</label>
+                    <input type="text" id="arrivalDate" name="arrival" placeholder="MM-DD-YYYY">
+                    
+                    <label for="departureDate">Check Out:</label>
+                    <input type="text" id="departureDate" name="departure" placeholder="MM-DD-YYYY">
+                    
+                    <label for="rooms">Rooms:</label>
+                    <select id="rooms" name="rooms">
+                        
+                    </select>
+                    
+                    <label for="adults">Adults:</label>
+                    <select id="adults" name="adults">
+                        
+                    </select>
+                    
+                    <label for="children">Children:</label>
+                    <select id="children" name="children">
+                     
+                    </select>
+                    
+                    <button type="submit">Check Availability</button>
+                </form>
+            </div>
+        </div>
+       
+
+        <div id="availabilityModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Available Rooms</h2>
+                <div id="roomsList"></div>
+                <button id="continueButton">Continue</button>
+            </div>
+        </div>
+
+        
+
+
+
+
+
+
+
+
+
+
+
+       
+        <section class="story1">
+            <div class="image-container">
+                
+                <img src="https://www.usatoday.com/gcdn/-mm-/05b227ad5b8ad4e9dcb53af4f31d7fbdb7fa901b/c=0-64-2119-1259/local/-/media/USATODAY/USATODAY/2014/08/13/1407953244000-177513283.jpg" alt="Beach Scene" />
+            </div>
+            <div class="text-container">
+                <h2>MEMORIES IN THE MAKING</h2>
+                <p>Look out for a stretch of sunshine home to Montauk's warmest welcome. At the end of the road, a friendly face peers out from behind the clouds. That’s how you know you’ve made it to your saltwater haven on New York’s most cool & calming shoreline. Relax, you’re here. Welcome to Hero Beach Club.</p>
+            </div>
+        </section>
+
+        <section class="story2">
+            <div class="text-container">
+                <h2>YOUR TITLE HERE</h2>
+                <p>Look out for a stretch of sunshine home to Montauk's warmest welcome. At the end of the road, a friendly face peers out from behind the clouds. That’s how you know you’ve made it to your saltwater haven on New York’s most cool & calming shoreline. Relax, you’re here. Welcome to Hero Beach Club.</p>
+            </div>
+            <div class="image-container">
+                
+                <img src="https://images.pexels.com/photos/258154/pexels-photo-258154.jpeg?cs=srgb&dl=pexels-pixabay-258154.jpg&fm=jpg" alt="Descriptive Scene" />
+            </div>
+        </section>
+
+        <section id="home">
+           
+          
+        </section>
+
+       
+        <section id="rooms">
+ 
+
+   
+
+    <div class="carousel-container">
+        <div id="carousel" class="carousel">
+            <img src="https://media.istockphoto.com/id/104731717/photo/luxury-resort.jpg?s=612x612&w=0&k=20&c=cODMSPbYyrn1FHake1xYz9M8r15iOfGz9Aosy9Db7mI=" alt="Single Room" class="carousel-image">
+            <img src="https://cdn.traveltripper.io/site-assets/512_855_12327/media/2018-02-27-075802/large_superior-double.jpg" alt="Double Room" class="carousel-image" style="display: none;">
+            <img src="https://i1.wp.com/www.differencebetween.com/wp-content/uploads/2016/01/Difference_Between_Suite_Room_Image1.jpg" alt="Suite Room" class="carousel-image" style="display: none;">
+        </div>
+        <div class="carousel-controls">
+            <button id="prev">＜</button>
+            <button id="next">＞</button>
+        </div>
+    </div>
+    <div class="room-info">
+        <div id="single-info" class="info"></div>
+        <div id="double-info" class="info" style="display: none;"></div>
+        <div id="suite-info" class="info" style="display: none;"></div>
+    </div>
+    
+    
+    </main>
+
+   
+    <footer>
+        <footer>
+            <div class="footer-container">
+                <div class="footer-left">
+                    <h2>Pacific Rooftop</h2>
+                    <p>SBUIUI@BIUB@IUB</p>
+                    <p>address1111</p>
+                    <p>address2222</p>
+                    <p>email address:***********</p>
+                    <p>+1 (425)559-0355</p>
+                   
+                    <div class="footer-links">
+                        <a href="#">Contact Us</a> |
+                        <a href="#">Press</a> |
+                        <a href="#">Cleanliness Policy</a> |
+                        <a href="#">Careers</a>
+                    </div>
+                </div>
+                <div class="footer-right">
+                    <h3>Sign Up to be A Member!</h3>
+                    <form class="newsletter-form" id="signupForm">
+                        <input type="text" name="firstName" placeholder="First Name" required>
+                        <input type="text" name="lastName" placeholder="Last Name" required>
+                        <input type="email" name="email" placeholder="Email Address" required>
+                        <input type="password" name="password" placeholder="Password" required>
+                        <div class="checkbox-container">
+                            <input type="checkbox" id="privacy" name="privacy" required>
+                            <label for="privacy">I have read and agree to the Privacy Policy.</label>
+                        </div>
+                        <div class="checkbox-container">
+                            <input type="checkbox" id="offers" name="offers">
+                            <label for="offers">Yes, I would like to receive emails with exclusive specials and offers.</label>
+                        </div>
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </footer>
+
+       
+      
+
+    </footer>
+
+
+
+    
+    <script src="javascript.js"></script>
+</body>
+</html>

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang=en> 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel reservation</title>
+  
+    <link rel="stylesheet" href="rooms.css">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+   
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+   
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+</head>
+<body>
+    <div class="background">
+        <img src="https://images.trvl-media.com/lodging/42000000/41510000/41504800/41504735/c936e13c.jpg?impolicy=resizecrop&rw=1200&ra=fit" alt="Background Image"/>
+    </div>
+    
+    <header>     
+        <nav>
+            <div class="header-container">
+                <div class="menu">Menu
+                    <div class="slide-out-menu">
+                        <ul>
+                            <li><a href="Hotel-web.html">Homepage</a></li>
+                            <li><a href="rooms.html">Rooms</a></li>
+                            <li><a href="#services">Services</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                            <li><a href="login.html">Log In</a></li>
+                            
+                        </ul>
+                    </div>
+                </div>
+                <h1 class="hotel-name">Ocean Shore Hotel</h1>
+                <div class="book-now">
+                    <span class="phone-number">Phone: +1 (000) 000-0000</span>
+                    <button onclick="showBookingForm()" class="book-now-button">BOOK NOW</button>
+                    
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section class="amenities-section">
+        <h2>Hotel Amenities</h2>
+        <ul class="amenities-list">
+            <li>24-hour front desk</li>
+            <li>Free Wi-Fi</li>
+            <li>Pool</li>
+            <li>Spa services</li>
+            <li>Restaurant and bar</li>
+            <li>Fitness center</li>
+          
+        </ul>
+    </section>
+    <main>
+
+
+      
+
+
+
+
+
+
+
+
+
+
+
+        <section class="room-type-1">
+            <div class="image-container">
+               
+                <img src="https://www.usatoday.com/gcdn/-mm-/05b227ad5b8ad4e9dcb53af4f31d7fbdb7fa901b/c=0-64-2119-1259/local/-/media/USATODAY/USATODAY/2014/08/13/1407953244000-177513283.jpg" alt="Beach Scene" />
+            </div>
+            <div class="text-container">
+                <h2>Queen</h2>
+                <p>Look out for a stretch of sunshine home to Montauk's warmest welcome. At the end of the road, a friendly face peers out from behind the clouds. That’s how you know you’ve made it to your saltwater haven on New York’s most cool & calming shoreline. Relax, you’re here. Welcome to Hero Beach Club.</p>
+                <button class="book-now-button">Book Now</button>
+            </div>
+            
+        </section>
+
+        <section class="room-type-2">
+            <div class="text-container">
+                <h2>Double</h2>
+                <p>Look out for a stretch of sunshine home to Montauk's warmest welcome. At the end of the road, a friendly face peers out from behind the clouds. That’s how you know you’ve made it to your saltwater haven on New York’s most cool & calming shoreline. Relax, you’re here. Welcome to Hero Beach Club.</p>
+                <button class="book-now-button">Book Now</button>
+            </div>
+            <div class="image-container">
+                
+                <img src="https://images.pexels.com/photos/258154/pexels-photo-258154.jpeg?cs=srgb&dl=pexels-pixabay-258154.jpg&fm=jpg" alt="Descriptive Scene" />
+            </div>
+        </section>
+
+        <section class="room-type-3">
+            <div class="image-container">
+                <img src="https://www.usatoday.com/gcdn/-mm-/05b227ad5b8ad4e9dcb53af4f31d7fbdb7fa901b/c=0-64-2119-1259/local/-/media/USATODAY/USATODAY/2014/08/13/1407953244000-177513283.jpg" alt="Beach Scene" />
+            </div>
+            <div class="text-container">
+                <h2>King</h2>
+                <p>Look out for a stretch of sunshine home to Montauk's warmest welcome. At the end of the road, a friendly face peers out from behind the clouds. That’s how you know you’ve made it to your saltwater haven on New York’s most cool & calming shoreline. Relax, you’re here. Welcome to Hero Beach Club.</p>
+                <button class="book-now-button">Book Now</button>
+            </div>
+        </section>
+
+        <section class="room-type-4">
+            <div class="text-container">
+                <h2>King OceanSide</h2>
+                <p>Look out for a stretch of sunshine home to Montauk's warmest welcome. At the end of the road, a friendly face peers out from behind the clouds. That’s how you know you’ve made it to your saltwater haven on New York’s most cool & calming shoreline. Relax, you’re here. Welcome to Hero Beach Club.</p>
+                <button class="book-now-button">Book Now</button>
+            </div>
+            <div class="image-container">
+                <img src="https://images.pexels.com/photos/258154/pexels-photo-258154.jpeg?cs=srgb&dl=pexels-pixabay-258154.jpg&fm=jpg" alt="Descriptive Scene" />
+            </div>
+        </section>
+
+        <section class="room-type-5">
+            <div class="image-container">
+                <img src="https://www.usatoday.com/gcdn/-mm-/05b227ad5b8ad4e9dcb53af4f31d7fbdb7fa901b/c=0-64-2119-1259/local/-/media/USATODAY/USATODAY/2014/08/13/1407953244000-177513283.jpg" alt="Beach Scene" />
+            </div>
+            <div class="text-container">
+                <h2>Double OceanSide</h2>
+                <p>Look out for a stretch of sunshine home to Montauk's warmest welcome. At the end of the road, a friendly face peers out from behind the clouds. That’s how you know you’ve made it to your saltwater haven on New York’s most cool & calming shoreline. Relax, you’re here. Welcome to Hero Beach Club.</p>
+                <button class="book-now-button">Book Now</button>
+            </div>
+        </section>
+
+        <section class="room-type-6">
+            <div class="text-container">
+                <h2>King Debluxe</h2>
+                <p>Look out for a stretch of sunshine home to Montauk's warmest welcome. At the end of the road, a friendly face peers out from behind the clouds. That’s how you know you’ve made it to your saltwater haven on New York’s most cool & calming shoreline. Relax, you’re here. Welcome to Hero Beach Club.</p>
+                <button class="book-now-button">Book Now</button>
+            </div>
+            <div class="image-container">
+                <img src="https://images.pexels.com/photos/258154/pexels-photo-258154.jpeg?cs=srgb&dl=pexels-pixabay-258154.jpg&fm=jpg" alt="Descriptive Scene" />
+            </div>
+        </section>
+
+
+
+    </main>
+
+
+
+
+
+    <footer>
+        <footer>
+            <div class="footer-container">
+                <div class="footer-left">
+                    <h2>Pacific Rooftop</h2>
+                    <p>SBUIUI@BIUB@IUB</p>
+                    <p>address1111</p>
+                    <p>address2222</p>
+                    <p>email address:***********</p>
+                    <p>+1 (425)559-0355</p>
+                   
+                    <div class="footer-links">
+                        <a href="#">Contact Us</a> |
+                        <a href="#">Press</a> |
+                        <a href="#">Cleanliness Policy</a> |
+                        <a href="#">Careers</a>
+                    </div>
+                </div>
+                <div class="footer-right">
+                    <h3>Sign Up to be A Member!</h3>
+                    <form class="newsletter-form">
+                        <input type="text" placeholder="First Name">
+                        <input type="text" placeholder="Last Name">
+                        <input type="email" placeholder="Email Address">
+                        <div class="checkbox-container">
+                            <input type="checkbox" id="privacy">
+                            <label for="privacy">I have read and agree to the Privacy Policy.</label>
+                        </div>
+                        <div class="checkbox-container">
+                            <input type="checkbox" id="offers">
+                            <label for="offers">Yes, I would like to receive emails with exclusive specials and offers.</label>
+                        </div>
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </footer>
+    </footer>
+
+</body>
+</html>

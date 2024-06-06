@@ -1,0 +1,518 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+.background img{
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    text-align: left;
+    font-family: "Montserrat",sans-serif;
+    font-size: 16px;
+    color: #202020;
+    -webkit-font-smoothing: antialiased;
+    box-sizing: border-box;
+    display: block;
+    opacity: 1;
+    clip-path: inset(0 0 0 0);
+    transition: all .7s ease-in-out;
+    position: relative;
+    width: 100vw; 
+  height: auto; 
+
+   
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background-color: rgba(248, 248, 248, 0.5); 
+    padding: 10px 0;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(19, 18, 18, 0.1); 
+    
+}
+
+main {
+    position: relative;
+    background: #fff;
+    z-index: 10;
+    
+    padding-top: 100vh;
+}
+
+#home h1 {
+    font-size: 3em; 
+    margin-top: 0;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px; 
+    margin: auto;
+}
+
+.menu {
+    font-size: 1.2em; 
+    color: #010101;
+    cursor: pointer; 
+    position: relative; 
+    
+}
+body {
+    overflow-x: hidden;
+}
+
+
+.slide-out-menu {
+    position: fixed;
+    top: 0;
+    left: -50vw;
+    width: 25vw;
+    height: 100vh; 
+    background-color: rgba(25, 160, 167, 0.9); 
+    transition: left 0.5s ease; 
+    z-index: 100; 
+}
+
+
+.slide-out-menu ul {
+    list-style-type: none;
+    padding: 20px; 
+    margin: 0;
+    margin-top:100px ;
+}
+
+.slide-out-menu ul li a {
+    display: block;
+    padding: 10px 20px;
+    color: #f6f4f4;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+
+.menu:hover .slide-out-menu {
+    left: 0;
+}
+
+.hotel-name {
+    font-size: 2em; 
+    color: #020202; 
+    text-align: center;
+    
+}
+
+.book-now {
+    text-align: right;
+}
+
+.phone-number {
+    display: block; 
+    color: #070707; 
+    margin-bottom: 5px;
+}
+
+.book-now-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color:transparent; 
+    color: #0c0c0c; 
+    text-decoration: none;
+    border-radius: 5px; 
+    font-weight: bold;
+    margin-right: 5px;
+
+}
+.book-now-button:hover {
+    background-color: #000;
+    color: #fff;
+
+}
+
+
+
+.story1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    max-width: 1000px;
+    margin-left: 10px;
+    margin-top: -600px;
+}
+
+.image-container {
+    flex: 3; 
+    padding-right: 20px;
+    margin-left: px;
+}
+
+.image-container img {
+    width: 100%; 
+    height: auto; 
+    display: block; 
+}
+
+.text-container {
+    flex: 10; 
+    padding-left: 20px; 
+}
+
+.text-container h2 {
+    font-size: 2em; 
+    color: #333; 
+    margin-bottom: 0.5em;
+}
+
+.text-container p {
+    font-size: 1em; 
+    color: #666; 
+    line-height: 1.6; 
+}
+
+.story2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    max-width: 1000px; 
+    margin-left: 150px;
+    margin-top: 100px; 
+}
+
+.image-container {
+    flex: 3;
+    padding-right: 20px; 
+}
+
+.image-container img {
+    width: 100%; 
+    height: auto; 
+    display: block;
+}
+
+.text-container {
+    flex: 2; 
+    padding-left: 0px;
+    margin-right: 10px;
+}
+
+.text-container h2 {
+    font-size: 2em; 
+    color: #333; 
+    margin-bottom: 0.5em;
+}
+
+.text-container p {
+    font-size: 1em; 
+    color: #666; 
+    line-height: 1.6; 
+}
+
+
+
+
+
+
+
+.booking-form-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1001; 
+    display: none;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    cursor: pointer;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.booking-form h2 {
+    text-align: center;
+}
+
+.booking-form form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.booking-form form label {
+    display: block;
+}
+
+.booking-form form input,
+.booking-form form select {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.booking-form form button {
+    grid-column: 1 / -1;
+    padding: 10px;
+    background-color: #000;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+
+.modal {
+    display: none; 
+    position: fixed; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    width: 30%; 
+    height: auto; 
+    background-color: #2c3e50; 
+    z-index: 1000; 
+    border-radius: 5px; 
+    padding: 20px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.modal-content {
+   
+    color: white; 
+    border-radius: 10px; 
+    transition: max-height 0.5s ease-out; 
+    overflow: hidden; 
+}
+
+.input-container {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.input-container .icon {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    color: #fff; 
+}
+
+.input-container input {
+    width: 100%;
+    padding: 10px 10px 10px 40px; 
+    border: none;
+    border-radius: 20px; 
+    outline: none;
+    background: #34495e;
+    color: white; 
+    box-sizing: border-box;
+}
+
+.login-button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 20px; 
+    background: #1abc9c; 
+    color: white;
+    cursor: pointer;
+}
+
+.login-button:hover {
+    background: #16a085; 
+}
+
+.close-button2 {
+    position: absolute; 
+    top: 8px; 
+    right: 11px; 
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.top-right-buttons .book-now-button {
+  
+    
+}
+
+
+nav #menuLoginButton {
+   
+}
+
+.header-buttons > button:last-child {
+    margin-right: 0;
+}
+.header-buttons {
+    display: flex;
+    align-items: center; 
+    
+}
+
+
+
+
+
+
+footer {
+    background-color: #353535; 
+    color: #fff; 
+    padding: 50px; 
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 50px;
+    
+    width: 100%;
+}
+
+.footer-right {
+   
+    flex-basis: 50%;
+}
+
+.footer-left h2 {
+    margin: 0;
+    padding-bottom: 10px;
+}
+
+.footer-left p,
+.footer-links a,
+.social-icons a {
+    color: #ccc; 
+    text-decoration: none;
+    padding: 5px 0; 
+}
+
+.social-icons {
+    font-size: 24px; 
+    padding-top: 10px;
+}
+
+.social-icon {
+    padding-right: 10px;
+}
+
+.footer-right h3 {
+    margin-top: 0;
+}
+
+.newsletter-form input[type="text"],
+.newsletter-form input[type="password"],
+.newsletter-form input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-bottom: 1px solid #ccc; 
+    background-color: transparent;
+    color: #fff;
+}
+
+.newsletter-form .checkbox-container {
+    margin: 20px 0;
+}
+
+.newsletter-form input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.newsletter-form button {
+    background-color: transparent;
+    border: 1px solid #ccc;
+    padding: 10px 20px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.newsletter-form button:hover {
+    background-color: #ccc;
+    color: #1a1a1a;
+}
+
+
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+    }
+    .footer-left,
+    .footer-right {
+        width: 100%;
+        
+    }
+}
+
+.carousel-container {
+    width: 100vw; 
+    height: 100vh; 
+    overflow: hidden; 
+    position: relative; 
+}
+
+.carousel {
+    width: 100%;
+    height: 100%;
+}
+
+.carousel-image {
+    width: 100%; 
+    height: 100%;
+    object-fit: cover; 
+    display: block; 
+}
+
+.carousel-controls {
+    position: absolute; 
+    bottom: 10px; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    z-index: 10; 
+}
+
+.info {
+    position: absolute;
+    bottom: 10px; 
+    width: 100%; 
+    text-align: center; 
+    color: #fff; 
+    z-index: 10; 
+}
+.signup-button {
+    background-color: #4CAF50; 
+    color: white;
+    padding: 10px 20px;
+    margin: 10px 0;
+    border: none;
+    cursor: pointer;
+}
